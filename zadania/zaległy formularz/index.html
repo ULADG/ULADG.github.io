@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Formularz</title>
@@ -17,16 +18,15 @@
 		<input type="text" id='numer'><br/>
 
 
-		<p>miasto
-
-			<select>
+		<label for="miasto">miasto</label>
+			<select id="miasto">		
       
         <option value="wybierz">wybierz</option>
         <option value="Krakow">Krakow</option>
         <option value="Warszawa">Warszawa</option>
         <option value="Gdansk">Gdansk</option>
         </select>
-		</p>
+		
 
 		<p>Płeć:</p>
 		<input type="radio" name="gender" value="facet" id="male"> <label for="male">Mezczyzna</label><br/>
@@ -35,12 +35,17 @@
 
 		<input type="checkbox" id="agreement" name="agreement">
 		<label for="agreement"> Wyrazam zgode na przetwarzanie danych osobowych</label><br/>
-
-		<p>wiadomość:</p>
-		<textarea cols="20" rows="5"></textarea>
-		 <input type="submit" name="submit" id="submit"><label for="submit"></label>
+		
+		<label for='wiadomość'>wiadomość:</label><br/>
+  <textarea name="wiadomosc" id="message" cols=10 rows=20> </textarea>
+		
+		<input type="submit" name="submit" id="submit"><label for="submit"></label>
 
 	</form>
 
 </body>
+
 </html>
+
+
+
